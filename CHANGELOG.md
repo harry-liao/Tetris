@@ -1,0 +1,7 @@
+# changelog
+
+## 1.0.0 (2023-04-29)
+
+-FULFILL MOST FUNCTION
+-ADD SCORE
+-ADD NEXT TETRIS
