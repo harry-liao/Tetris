@@ -6,12 +6,14 @@ FPS = 60
 FIELD_COLOR = (48, 39, 32) # 背景色
 BG_COLOR = (24, 89, 117)
 
+SPRITE_DIR_PATH = 'sprites'
+
 FONT_PATH = 'font/SFPixelateShaded-Bold.ttf'
 
 ANIM_TIME_INTERVAL = 200 # milliseconds 
 FAST_ANIM_TIME_INTERVAL = 15
 
-TILE_SIZE = 50 # 每格長度
+TILE_SIZE = 40 # 每格長度
 FIELD_SIZE = FIELD_W, FIELD_H = 10, 20 # 長、寬幾格
 FIELD_RES = FIELD_W * TILE_SIZE, FIELD_H * TILE_SIZE
 

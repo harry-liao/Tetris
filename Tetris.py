@@ -12,7 +12,7 @@ class Text:
         self.font.render_to(self.app.screen, (WIN_W * 0.605, WIN_H * 0.02),
                             text='TETRIS', fgcolor='white',
                             size=TILE_SIZE * 1.65, bgcolor='black')
-        self.font.render_to(self.app.screen, (WIN_W * 0.65, WIN_H * 0.22),
+        self.font.render_to(self.app.screen, (WIN_W * 0.68, WIN_H * 0.22),
                             text='next', fgcolor='orange',
                             size=TILE_SIZE * 1.4, bgcolor='black')
         self.font.render_to(self.app.screen, (WIN_W * 0.64, WIN_H * 0.67),

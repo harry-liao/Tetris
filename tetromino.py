@@ -9,8 +9,9 @@ class Block(pg.sprite.Sprite):
         self.alive = True
 
         super().__init__(tetromino.tetris.sprite_group)
-        self.image = pg.Surface([TILE_SIZE, TILE_SIZE]) 
-        pg.draw.rect(self.image, 'orange', (1, 1, TILE_SIZE - 2, TILE_SIZE - 2), border_radius=8)
+        self.image = tetromino.image
+        # self.image = pg.Surface([TILE_SIZE, TILE_SIZE]) 
+        # pg.draw.rect(self.image, (0, 0, 255) , (1, 1, TILE_SIZE - 2, TILE_SIZE - 2), border_radius=8)
         # random.choice(list(COLORS.values()))
         self.rect = self.image.get_rect()
 
@@ -42,8 +43,9 @@ class Tetromino:
     def __init__(self, tetris, current=True):
         self.tetris = tetris
         self.shape = random.choice(list(TETROMINO.keys()))
+        self.image = random.choice(tetris.app.images)
         self.blocks = [Block(self, pos) for pos in TETROMINO[self.shape]]
-        # self.color = random.choice(list(COLORS.values()))
+        self.color = random.choice(list(COLORS.values()))
         self.landing = False
         self.current = current
     
