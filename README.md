@@ -1,2 +1,2 @@
 # Tetris
-base on chatgpt generator
+just for fun
