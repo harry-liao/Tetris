@@ -45,7 +45,7 @@ class Tetromino:
         self.shape = random.choice(list(TETROMINO.keys()))
         self.image = random.choice(tetris.app.images)
         self.blocks = [Block(self, pos) for pos in TETROMINO[self.shape]]
-        self.color = random.choice(list(COLORS.values()))
+        # self.color = random.choice(list(COLORS.values()))
         self.landing = False
         self.current = current
     
