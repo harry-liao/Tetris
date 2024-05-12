@@ -1,5 +1,5 @@
 from settings import *
-from tetris import Tetris, Text
+from Tetris import Tetris, Text
 import sys
 import pathlib
 
